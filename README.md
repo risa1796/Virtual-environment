@@ -124,7 +124,7 @@ More codes for the virtual environement
 
 • 패키지 설치 예): conda install numpy pandas matplotlib seaborn scipy scikit-learn tensorflow keras
 
-           # 기본채널에 패키지 부재시 : conda install –c conda-forge
+              기본채널에 패키지 부재시 : conda install –c conda-forge
 	   
 • 가상환경 종료 : conda deactivate
 
