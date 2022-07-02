@@ -117,12 +117,22 @@ Now I will explan how to set up a virtual environment in Python.
 More codes for the virtual environement
 
 • 버전 명시 설치 : conda create –n 가상환경명 python=3.7
+
 • 가상환경 시작 :activate 가상환경명
+
 • Jupyter notebook 설치 : conda install jupyter notebook
+
 • 패키지 설치 예): conda install numpy pandas matplotlib seaborn scipy scikit-learn tensorflow keras
+
            # 기본채널에 패키지 부재시 : conda install –c conda-forge
+	   
 • 가상환경 종료 : conda deactivate
+
 • 가상환경 저장 : conda env export –n 가상환경명 > 파일명.yml
+
 • 새로운 가상환경 생성 : conda env create –n 가상환경명 –f ./파일명.yml
+
 • 가상환경 복사 : conda create -n 생성할가상환경명 --clone 원본가상환경명
+
 • 가상환경 제거 :conda env remove –n 가상환경명
+
