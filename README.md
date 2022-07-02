@@ -46,7 +46,7 @@ If you are doing multiple projects on the Anaconda default environment (base), a
 
 1. 제일 처음으로 아나콘다를 설치해야 합니다.<br />
    First and foremost, you need to install Anaconda.<br />
-   $ 설치 링크 : URL(https://www.anaconda.com/products/individual) <br />
+   설치 링크 : URL(https://www.anaconda.com/products/individual) <br />
   
 		
 		
