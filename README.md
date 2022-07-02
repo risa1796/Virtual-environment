@@ -36,7 +36,8 @@ If you are doing multiple projects on the Anaconda default environment (base), a
 	
 
 	
- 
+# 가상환경 만들기<br />
+# virtual-environment Setup <br />
 ### 이제 파이썬 가상환경을 만드는 법을 알려드리도록 하겠습니다.<br />
 ### Now I will explan how to set up a virtual environment in Python. 
 
@@ -45,7 +46,7 @@ If you are doing multiple projects on the Anaconda default environment (base), a
 
 1. 제일 처음으로 아나콘다를 설치해야 합니다.<br />
    First and foremost, you need to install Anaconda.<br />
-   설치 링크 : URL(https://www.anaconda.com/products/individual) <br />
+   $ 설치 링크 : URL(https://www.anaconda.com/products/individual) <br />
   
 		
 		
@@ -56,14 +57,14 @@ If you are doing multiple projects on the Anaconda default environment (base), a
    environment. <br />
  
  
-   (base) chungasmac:~ jincheong-a$ cd /Users/jincheong-a/anaconda3/envs
+   $ (base) chungasmac:~ jincheong-a$ cd /Users/jincheong-a/anaconda3/envs
    
 			
    
 3.  다음으로 아래와 같은 command 를 실행하여 cadk7 가상환경을 만듭니다. 파이썬 버전은 3.7을 사용하였습니다.<br />
     Next, I have used the following commands to set up a virtual environment 'cadk7' with the Python version 3.7.<br />
 
-   (base) chungasmac:envs jincheong-a$ conda create -n cadk7 python=3.7
+   $ (base) chungasmac:envs jincheong-a$ conda create -n cadk7 python=3.7
    
 			
 			
