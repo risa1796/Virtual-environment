@@ -39,17 +39,56 @@ Now I will explan how to set up a virtual environment in Python.
    First and foremost, you need to install Anaconda.
    설치 링크 : URL(https://www.anaconda.com/products/individual)
   
-2. 윈도우 경우, 윈도우 시작버튼을 눌러 확인하고 내PC 고급시스템 설정에서 Path(경로)를 지정합니다. 저는 명령어를 사용하여 가상환경을 설치할 경로를 지정해 주었습니다.
-   If you have Window, click the Window start button and go to myPC Settings to set the path. I use CMD command to set the path for my virtual environment. 
+2. 윈도우 경우, 윈도우 시작버튼을 눌러 확인하고 내PC 고급시스템 설정에서 Path(경로)를 지정합니다. 저는 명령어를 사용하여 가상환경을 설치할 경로를 지정해 주었습니다. 
+   제가 실제로 가상환경을 설치한 방법을 아래와 같습니다. 
+   If you have Window, click the Window start button and go to myPC Settings to set the path. I used CMD command to set the path for my virtual
+   environment. 
+ 
+ 
+   (base) chungasmac:~ jincheong-a$ cd /Users/jincheong-a/anaconda3/envs
    
-   <img width="702" alt="Bildschirmfoto 2022-07-02 um 13 48 16" src="https://user-images.githubusercontent.com/70292353/176986935-2b3c50d0-f488-4266-a839-606eacb06ae6.png">
+   
+3.  다음으로 아래와 같은 command 를 실행하여 cadk7 가상환경을 만듭니다. 파이썬 버전은 3.7을 사용하였습니다.
+    Next, I have used the following commands to set up a virtual environment 'cadk7' with the Python version 3.7.
 
-   OR 
+   (base) chungasmac:envs jincheong-a$ conda create -n cadk7 python=3.7
    
-   command line >
-  
-   (base) chungasmac:~ jincheong-a$ cd ./anaconda3/envs
-   
-   
-3.   
+4.  명령어에 Proceed ([y]/n)? 이 뜨면 y 을 입력하여 설치를 진행시켜 주세요.
+    If you see 'Proceed ([y]/n)?' on cmd, enter y to proceed the setup.
+    
+    
+5.  설치가 완료되면 아래와 같이 뜹니다.
+    After a successful intallation, you will see the following lines. 
 
+  To activate this environment, use  
+ 
+      $ conda activate cadk7
+ 
+  To deactivate an active environment, use
+ 
+      $ conda deactivate
+
+    
+6. 위에 설명을 덧붙이자면, 설치된 가상환경을 열고 싶으면 coda activate cadk7 을 입력하시고, 종료는 conda deactivate 을 입력하세요.
+   To activate the virtual environment write: 'coda activate cadk7', to close :  'conda deactivate'.
+
+7. 가상환경을 열게되면 경로가 (base) 에서 (cadk7) 으로 변경된 것을 확인하실 수 있습니다. 
+   When you successfully open the virtual environment, you will see that it has changed from '(base)' to '(cadk7)'
+
+8. 이제 평소처럼 아나콘다 내비게이터를 열면 상단 Applications on 목록에서 base(root) 이외에 cadk7 가상환경을 찾아보실 수 있습니다. 지정해서 가상환경에서 프로젝트를 시작하면 됩니다!
+   Now open the Anaconda Navigator as usual and you will see base(root) and cadk7 in the upper 'Applications on' list. Click cadk7 to start your project!
+
+
+가상환경 관련 코드들:
+More codes for the virtual environement
+
+• 버전 명시 설치 : conda create –n 가상환경명 python=3.7
+• 가상환경 시작 :activate 가상환경명
+• Jupyter notebook 설치 : conda install jupyter notebook
+• 패키지 설치 예): conda install numpy pandas matplotlib seaborn scipy scikit-learn tensorflow keras
+           # 기본채널에 패키지 부재시 : conda install –c conda-forge
+• 가상환경 종료 : conda deactivate
+• 가상환경 저장 : conda env export –n 가상환경명 > 파일명.yml
+• 새로운 가상환경 생성 : conda env create –n 가상환경명 –f ./파일명.yml
+• 가상환경 복사 : conda create -n 생성할가상환경명 --clone 원본가상환경명
+• 가상환경 제거 :conda env remove –n 가상환경명
