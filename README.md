@@ -34,11 +34,11 @@ If you are doing multiple projects on the Anaconda default environment (base), a
  
 	
 	
-	<br /><br /><br />
+
 	
  
-이제 파이썬 가상환경을 만드는 법을 알려드리도록 하겠습니다.<br />
-Now I will explan how to set up a virtual environment in Python. 
+### 이제 파이썬 가상환경을 만드는 법을 알려드리도록 하겠습니다.<br />
+### Now I will explan how to set up a virtual environment in Python. 
 
 
 
