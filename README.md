@@ -18,7 +18,7 @@ If you are in the beginning stage of learning Python or simply want to improve y
  기존 아나콘다 배포판 (base)에서 여러 프로젝트를 만들게 되면, 패키지들이 한 곳에 다 모여 있기 때문에 어느 프로젝트에 어떤 패키지들이 필요한지를 추후에 구분하기가 어렵습니다. 
  프로젝트를 배포할 경우 원격 서버에 패키지들을 새로 설치해야하는데, 구분이 안되있는 상태에서는 불필요한 패키지까지 설치해야한다는 단점이 생깁니다. 
  더불어서 프로젝트에 쓰였던 패키지 버전이 어떤 것이였는지 일일이 확인하기 어려운 점도 있습니다.<br />
-If you are doing multiple projects on the Anaconda default environment (base), all installed packages are placed in one folder. This will make it difficult to find out which packages are needed for which project. In case you need to distribute a certain project in a new server, unneeded packages will be installed as well. Moreover, it is a unnecessary to check each version of packages one by one. 
+If you are doing multiple projects on the Anaconda default environment (base), all installed packages are placed in one folder. This will make it difficult to find out which packages are needed for which project. In case you need to distribute a certain project in a new server, unneeded packages will be installed as well. Moreover, it is unnecessary to check each version of packages one by one. 
  
  
  
